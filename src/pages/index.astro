@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import SocialPill from '../icons/SocialPill.astro';
+import GitHub from '../icons/GitHub.astro'
+import Instagram from '../icons/Instagram.astro';
+import LinkdIn from '../icons/LinkdIn.astro';
+import X from '../icons/X.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<section class="w-full lg:w-[740px] mx-auto py-10">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-5">
+				Hey, i'm Steven Lizarazo <div class="flex justify-center items-center"><Badge> <a href="https://www.linkedin.com/in/stivliz/" target="_blank" rel="noopener">available for work...</a></Badge><div/></h1>
+			<h2 class="text-2xl opacity-70">
+				developer with training in <span class="hover:text-yellow-200 cursor-pointer">SoyHenry</span> and graduated as a
+				Software Technologist from the <span class="hover:text-red-300 cursor-pointer">Universidad Surcolombiana.  </span>
+			</h2>
+
+			<nav class="flex gap-x-2 mt-3 justify-end">
+				<SocialPill href="https://github.com/Stivliz">
+					<GitHub class="w-6 h-6"/> 
+				</SocialPill>
+				<SocialPill href="https://www.linkedin.com/in/stivliz/">
+					<LinkdIn class="w-6 h-6"/> 
+				</SocialPill>
+				<SocialPill href="https://twitter.com/code_reactive">
+					<X class="w-6 h-6"/> 
+				</SocialPill>
+				<SocialPill href="https://www.instagram.com/stivliz_2013?igsh=a3BkZmNxYjAzenhj">
+					<Instagram class="w-6 h-6"/>
+				</SocialPill>
+			</nav>
+			<!-- <ul>
+				<li class="mt-4"><a href="https://github.com/Stivliz" target="_blank" rel="noopener"><GitHub class="w-6 h-6" /></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul> -->
+		</section>
+	</main>
+</Layout>
