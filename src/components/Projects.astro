@@ -1,0 +1,35 @@
+---
+import ProjectsItems from "./ProjectsItems.astro";
+
+const PROJECTS = [ 
+    {
+        date:'may. 23 - jun. 23',
+        title: 'BookBuster',
+        description: 'Fully functional and attractive book marketplace, oriented to allow users to buy and sell books in a safeand effective way.',
+        link: '#https://book-buster-front.vercel.app/',
+        github: '#',
+        image:'/projects/svgBookCase.jpg',
+        tags: ['Javascript,', 'CSS,', 'ReactJS,', 'Redux,', 'Node,', 'Express,', 'Firebase,', 'Cloudinary,', 'Stripe,', 'PostgreSQL,', 'Sequelize']
+    },
+    {
+        date:'abr. 23 - may. 23',
+        title: 'Infinity Gaming',
+        description: 'Full stack web application oriented to the visualization and search of videogames, with a special focus oncontent creation.',
+        link: '#https://pifrontendvideogames-33olom8ok-stivliz.vercel.app/',
+        github: '#',
+        image:'/projects/svgInfinity.jpg',
+        tags: ['Javascript', 'CSS', 'ReactJS', 'Redux', 'Node', 'Express', 'PostgreSQL', 'Sequelize']
+    }
+]
+
+---
+
+<ol class="items-center sm:flex"> 
+    {
+        PROJECTS.map( project => (
+            <li class="relative mb-6 sm:mb-0">
+                <ProjectsItems {...project} /> 
+            </li>
+        ))
+    }                 
+</o>

@@ -1,0 +1,27 @@
+---
+import StudiesItems from "./StudiesItems.astro";
+
+const STUDIES = [
+    {
+        date:' 2022 - 2023',
+        title: 'Full Stack Web Developer. Henry Bootcamp.',
+        description: '700 hours of theoretical-practical coursework'
+    },
+    {
+        date:'2019 - 2022',
+        title: 'Software Development Technologist, Universidad Surcolombiana.',
+        description: 'I graduated as a Software Development Technologist at the Universidad Surcolombiana, where I acquired solid knowledge and skills in the field of software development.'
+    },
+]
+
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700"> 
+    {
+        STUDIES.map( studied => (
+            <li class="mb-10 ms-4">
+                <StudiesItems {...studied} />
+            </li>
+        ))
+    }                 
+</ol>
+
