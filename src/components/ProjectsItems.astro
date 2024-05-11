@@ -9,7 +9,7 @@ interface Props {
     image?:string
 }
 
-const {date, title, description, tags, image } = Astro.props
+const {date, title, description, tags, image, link } = Astro.props
 
 ---
 
@@ -32,7 +32,7 @@ const {date, title, description, tags, image } = Astro.props
                     ))
                 }
             </ul> -->
-            <a href="">
+            <a href={link} target="_blank">
                 <img class="rounded shadow-2xl shadow-white/10 mt-3" src={image} alt={`imagen del proyecto ${title}`} />
             </a>
         </div>
